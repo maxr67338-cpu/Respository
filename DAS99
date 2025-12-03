@@ -1,6 +1,7 @@
 --// 99 Nights in the Forest Script with Rayfield GUI //--
 
 -- Load Rayfield UI Library
+-- Load Rayfield UI Library
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 -- Services
@@ -10,7 +11,6 @@ local UserInputService = game:GetService("UserInputService")
 local LocalPlayer = Players.LocalPlayer
 local camera = workspace.CurrentCamera
 
--- Window Setup
 local Window = Rayfield:CreateWindow({
     Name = "99 Nights",
     LoadingTitle = "99 Nights Script",
@@ -20,13 +20,13 @@ local Window = Rayfield:CreateWindow({
         FolderName = nil,
         FileName = "99NightsSettings"
     },
-    Discord = {
-        Enabled = true,
+   Discord = {
+      Enabled = true,
         Invite = "https://discord.gg/McFaNxtTvg",
         RememberJoins = true
+   },
 
-            
-  KeySystem = true, -- Set this to true to use our key system
+   KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
       Title = "99 nights KEY",
       Subtitle = "LINK DISCORD SERVER",
